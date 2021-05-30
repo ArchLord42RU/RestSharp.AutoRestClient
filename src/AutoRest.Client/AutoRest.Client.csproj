@@ -6,8 +6,8 @@
         <Authors>Dmitriy Korolev</Authors>
         <Description>Auto rest client based on RestSharp project</Description>
         <RepositoryUrl>https://github.com/ArchLord42RU/AutoRest</RepositoryUrl>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <PackageVersion>1.1.0-rc.1</PackageVersion>
+        <AssemblyVersion>1.1.1</AssemblyVersion>
+        <PackageVersion>1.1.1</PackageVersion>
         <Title>AutoRest.Client</Title>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>

@@ -158,7 +158,11 @@ namespace AutoRest.Client.Proxy
 
             await ProcessingUtils.ApplyResponseParameterBindingAttributes(invocation.Method, context);
 
+#pragma warning disable 8603
+#pragma warning disable 8605
             return (TResponse)context.ReturnValue;
+#pragma warning restore 8605
+#pragma warning restore 8603
         }
 
         private static async Task<IRestRequest> GetRestRequest(IInvocation invocation)
