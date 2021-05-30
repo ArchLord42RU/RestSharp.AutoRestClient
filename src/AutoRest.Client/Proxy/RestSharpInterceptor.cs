@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using AutoRest.Client.Attributes;
 using AutoRest.Client.Client;
 using AutoRest.Client.Processing;
 using AutoRest.Client.Processing.Requests;
@@ -132,7 +131,8 @@ namespace AutoRest.Client.Proxy
 
             var executionContext = new ExecutionContext
             {
-                ClientType = invocation.Method.DeclaringType
+                ClientType = invocation.Method.DeclaringType,
+                Deserializer = new ResponseDeserializer(_client)
             };
 
             await NextAsync(executionContext);

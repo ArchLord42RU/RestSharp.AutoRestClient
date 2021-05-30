@@ -2,7 +2,6 @@
 using System.Linq;
 using AutoRest.Client.Client;
 using AutoRest.Client.Microsoft;
-using Microsoft.Extensions.Options;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection

@@ -64,7 +64,11 @@ namespace AutoRest.Client.Processing
         public static async Task ApplyResponseParameterBindingAttributes(ICustomAttributeProvider attributeProvider,
             ResponseParameterBindingContext context)
         {
-            var attributes = attributeProvider.GetCustomAttributes(true).OfType<ResponseParameterBindingAttribute>();
+            var attributes = attributeProvider.GetCustomAttributes(true)
+                .OfType<ResponseParameterBindingAttribute>().ToList();
+            
+            if (!attributes.Any())
+                attributes.Add(new FromBodyAttribute());
             
             foreach (var attribute in attributes)
             {

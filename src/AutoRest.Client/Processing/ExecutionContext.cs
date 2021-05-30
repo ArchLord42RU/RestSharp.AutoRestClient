@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoRest.Client.Processing.Response;
 using RestSharp;
 
 namespace AutoRest.Client.Processing
@@ -10,5 +11,7 @@ namespace AutoRest.Client.Processing
         public IRestResponse Response { get; internal set; }
         
         public Type ClientType { get; internal set; }
+        
+        public IResponseDeserializer Deserializer { get; internal set; }
     }
 }

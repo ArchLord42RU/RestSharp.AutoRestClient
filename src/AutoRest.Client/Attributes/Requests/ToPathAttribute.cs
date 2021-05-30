@@ -15,7 +15,7 @@ namespace AutoRest.Client.Attributes.Requests
         {
             var paramName = _paramName ?? context.MemberName;
             
-            context.ExecutionContext.RestRequest.AddParameter(paramName, context.MemberValue);
+            context.ExecutionContext.RestRequest.AddUrlSegment(paramName, context.MemberValue);
         }
     }
 }
