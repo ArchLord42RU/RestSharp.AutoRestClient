@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageId>AutoRest.Client</PackageId>
+        <Authors>Dmitriy Korolev</Authors>
+        <Description>Auto rest client based on RestSharp project</Description>
+        <RepositoryUrl>https://github.com/ArchLord42RU/AutoRest</RepositoryUrl>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageVersion>1.1.0-rc.1</PackageVersion>
+        <Title>AutoRest.Client</Title>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Castle.Core" Version="4.4.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      <PackageReference Include="RestSharp" Version="106.11.7" />
+    </ItemGroup>
+
+</Project>
